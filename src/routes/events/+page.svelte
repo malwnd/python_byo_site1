@@ -1,5 +1,5 @@
 <script>
-    import Card from "./january27/Card.svelte";
+
 </script>
 
 
