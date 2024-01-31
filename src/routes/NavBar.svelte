@@ -1,5 +1,8 @@
 <script>
-    
+    import { initializeStores, Drawer, getDrawerStore} from '@skeletonlabs/skeleton'
+
+    initializeStores()
+    const drawer = getDrawerStore()
 </script>
 
 <!-- This belongs in the lib directory but continue -->
@@ -28,9 +31,9 @@
             <button class="btn btn-sm">
                 <span>
                     <svg viewBox="0 0 100 75" class="fill-black w-5 h-4">
-                        <rect width="125" height="20 "/>
-                        <rect y="30" width="125" height="20 "/>
-                        <rect y="60" width="125" height="20 "/>
+                        <rect width="125" height="15"/>
+                        <rect y="30" width="125" height="15"/>
+                        <rect y="60" width="125" height="15"/>
                     </svg>
                 </span>
             </button>
