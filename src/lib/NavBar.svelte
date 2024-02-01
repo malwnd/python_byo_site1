@@ -1,6 +1,11 @@
 <script>
     import { AppBar } from '@skeletonlabs/skeleton';
-</script>t
+    import Hamburger from './Hamburger.svelte';
+
+    import {fade, fly} from 'svelte/transition';
+    export let sidebar = false;
+
+</script>
 
 <AppBar gridColumns="grid-cols-3" class="" slotTrail="place-content-end">
 	<svelte:fragment slot="lead">
@@ -25,17 +30,8 @@
             </div>
 
             <div class="">
-                <div class="flex items-center">
-                    <button class="btn btn-sm">
-                        <span>
-                            <svg viewBox="0 0 100 75" class="fill-black w-5 h-4">
-                                <rect width="125" height="15"/>
-                                <rect y="30" width="125" height="15"/>
-                                <rect y="60" width="125" height="15"/>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
+                <Hamburger bind:open={sidebar} />
+                
             </div>
         </div>
         
