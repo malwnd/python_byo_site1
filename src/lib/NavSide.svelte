@@ -7,7 +7,10 @@
         <ul class="flex flex-row space-x-8 items-center">
             <li><a href="/events" class="hover:underline text-2xl">EVENTS</a></li>	
             <li><a href="/projects" class="hover:underline text-2xl">PROJECTS</a></li>
-            <LightSwitch />
+            <div class="scale-x-[-1]">
+                <LightSwitch />
+            </div>
+            
         </ul>  
     </div>
 
