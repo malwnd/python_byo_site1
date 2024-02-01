@@ -8,13 +8,13 @@
       
         <div class="flex flex-col justify-center items-center">
             <div >
-                <a href="/events/january27" class="flex justify-center">
-                    <img src="/january27.webp" class="rounded-lg " alt="" srcset="">
+                <a href="/events/january24" class="flex justify-center">
+                    <img src="/january24.webp" class="rounded-lg " alt="" srcset="">
                 </a>
                 
             </div>
             <div class="mt-4 font-sans text-gray-700 text-xl">
-                <h1><a href="/events/january27">January 2024 Meetup</a></h1>
+                <h1><a href="/events/january24">January 2024 Meetup</a></h1>
             </div>
         </div>
 

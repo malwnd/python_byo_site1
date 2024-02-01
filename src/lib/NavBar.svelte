@@ -1,8 +1,5 @@
 <script>
-    import { initializeStores, Drawer, getDrawerStore} from '@skeletonlabs/skeleton'
 
-    initializeStores()
-    const drawer = getDrawerStore()
 </script>
 
 <!-- This belongs in the lib directory but continue -->
