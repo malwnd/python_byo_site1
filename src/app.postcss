@@ -1,12 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
 
-:root [data-theme="vintage"] {
-	--theme-font-family-base: 'Roboto', sans-serif;
-	--theme-font-family-base: 'Merriweather', serif;
-
+html,
+body {
+	@apply h-full overflow-hidden;
 }
 
+/* modern theme */
+@font-face {
+	font-family: 'Quicksand';
+	src: url('/fonts/Quicksand.ttf');
+	font-display: swap;
+}
+/* rocket theme */
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk.ttf');
+	font-display: swap;
+}
+/* vintage theme */
+@font-face {
+	font-family: 'Abril Fatface';
+	src: url('/fonts/AbrilFatface.ttf');
+	font-display: swap;
+}

@@ -1,24 +1,35 @@
 import { join } from 'path'
 
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin'
 
 export default {
 	darkMode: 'class',
-	content: ['./node_modules/@skeletonlabs/skeleton/dist/index.html', './src/**/*.{html,js,svelte,ts}'],
-	// content: ['./src/**/*.{html,js,svelte,ts}', join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')],
+	content: ['./src/**/*.{html,js,svelte,ts}', join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')],
 	theme: {
 		extend: {
-		  fontFamily: {
-			sans: ['Roboto', 'sans-serif'],
-			serif: ['Merriweather', 'serif'],
-			// mono: ['Menlo', 'Monaco', 'monospace'],
-		  },
+
 		},
-	  },
+	},
 	plugins: [
+		forms,
+		typography,
 		skeleton({
 			themes: {
 				preset: [
+					{
+						name: 'skeleton',
+						enhancements: true,
+					},
+					{
+						name: 'modern',
+						enhancements: true,
+					},
+					{
+						name: 'rocket',
+						enhancements: true,
+					},
 					{
 						name: 'vintage',
 						enhancements: true,
@@ -28,17 +39,3 @@ export default {
 		}),
 	],
 };
-
-// module.exports = {
-// 	theme: {
-// 	  extend: {
-// 		fontFamily: {
-// 		  sans: ['Nunito', 'Helvetica', 'Arial', 'sans-serif'],
-// 		  serif: ['Georgia', 'serif'],
-// 		  mono: ['Menlo', 'Monaco', 'monospace'],
-// 		},
-// 	  },
-// 	},
-// 	variants: {},
-// 	plugins: [],
-//   };

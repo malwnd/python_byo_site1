@@ -1,39 +1,51 @@
-<script>
+ <script>
 	import '../app.postcss';
-    import NavBar from '$lib/NavBar.svelte';
-    import Footer from '$lib/Footer.svelte';
-    import MobileSideBar from '../lib/MobileSideBar.svelte';
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import NavSide from '$lib/NavSide.svelte';
+	import Hamburger from '$lib/Hamburger.svelte';
+	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
+	
+	initializeStores();
+	const drawer = getDrawerStore();
 
-    let open = false;
-
-    
+	function drawerOpen(){
+		drawer.open({});
+	}
 
 </script>
 
-<div class="flex flex-col min-h-screen space-between">
 
-    <!-- Mobile SideBar Component here -->
-    <MobileSideBar bind:open />
+<Drawer>(content)</Drawer>
+<AppShell>
+	<div class="-m-2 -mt-2">
+		<AppBar class="" background="bg-transparent">
+			<svelte:fragment slot="lead">
+				<div class='h-16'>
+					<a href="/">
+						<img
+						class="dark:invert h-full w-full mx-auto -mt-1"
+						src="/python_bulawayo.svg"
+						alt="python_byo logo" />
+					</a>
+				</div>
+			</svelte:fragment>
 
-    <!-- NavBar Component here -->
-    <div class="top-0 text-gray-800">
-        <NavBar bind:sidebar={open}/>
-    </div>
+			<svelte:fragment slot="trail">
+				<div>
+					<NavSide />
+				</div>
+				<div class="md:hidden dark:invert">
+					<Hamburger on:click={drawerOpen}/>
+					<!-- <button on:click={drawerOpen}>click me</button> -->
 
+				</div>
+			</svelte:fragment>	
 
-    <div class="flex-1 my-8">
-        <!-- Content is injected here -->
-        <slot />
-    </div>
+		</AppBar>
+	</div>
+	
 
-    <!-- Footer Content injected Here -->
-    <div class="bottom-0 text-gray-800 ">
-        <Footer />
-    </div>
-  
-
-</div>
-
-
-
+	<!-- Page Route Content -->
+	<slot />
+</AppShell>
 

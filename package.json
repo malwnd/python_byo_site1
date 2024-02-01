@@ -1,5 +1,5 @@
 {
-  "name": "python-bulawayo",
+  "name": "python-bulawayo1",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,20 +8,19 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@skeletonlabs/skeleton": "2.7.1",
-    "@skeletonlabs/tw-plugin": "0.3.1",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
-    "autoprefixer": "10.4.17",
-    "postcss": "8.4.33",
     "svelte": "^4.2.7",
-    "tailwindcss": "3.4.1",
     "vite": "^5.0.3",
-    "vite-plugin-tailwind-purgecss": "0.2.0"
+    "postcss": "8.4.33",
+    "autoprefixer": "10.4.17",
+    "tailwindcss": "3.4.1",
+    "@skeletonlabs/skeleton": "2.8.0",
+    "@skeletonlabs/tw-plugin": "0.3.1",
+    "vite-plugin-tailwind-purgecss": "0.2.0",
+    "@tailwindcss/typography": "0.5.10",
+    "@tailwindcss/forms": "0.5.7"
   },
-  "type": "module",
-  "dependencies": {
-    "svelte-theme-select": "^0.0.5"
-  }
+  "type": "module"
 }
