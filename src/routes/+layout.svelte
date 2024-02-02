@@ -1,12 +1,13 @@
  <script>
 	import '../app.postcss';
+
 	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	
 	import NavSide from '$lib/NavSide.svelte';
 	import MobileNav from '$lib/MobileNav.svelte';
 	import Hamburger from '$lib/Hamburger.svelte';
-	
+	import Footer from '$lib/Footer.svelte';
 	
 	initializeStores();
 	const drawer = getDrawerStore();
@@ -17,12 +18,15 @@
 
 </script>
 
-<Drawer position="right" margin="m-4">
+<Drawer position="right" margin="m-4" width="w-[280px]">
 	<MobileNav />
 </Drawer>
 
 <AppShell>
-	<div class="-m-2 -mt-2">
+
+	<div class="flex flex-col min-h-screen">
+	
+		<div>
 		<AppBar class="" background="bg-transparent">
 			<svelte:fragment slot="lead">
 				<div class='h-16'>
@@ -48,9 +52,21 @@
 
 		</AppBar>
 	</div>
-	
 
-	<!-- Page Route Content -->
-	<slot />
+
+
+			<!-- Page Route Content -->
+			<div class="flex-1 my-8">
+				<!-- Content is injected here -->
+				<slot />
+			</div>
+		
+			<!-- Footer Content injected Here -->
+			<div class="bottom-0 text-gray-800 mt-auto flex-shrink-0">
+				<Footer />
+			</div>
+
+	</div>
+  
 </AppShell>
 
