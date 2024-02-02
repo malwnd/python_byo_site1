@@ -1,9 +1,12 @@
  <script>
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import NavSide from '$lib/NavSide.svelte';
-	import Hamburger from '$lib/Hamburger.svelte';
 	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	
+	import NavSide from '$lib/NavSide.svelte';
+	import MobileNav from '$lib/MobileNav.svelte';
+	import Hamburger from '$lib/Hamburger.svelte';
+	
 	
 	initializeStores();
 	const drawer = getDrawerStore();
@@ -14,8 +17,10 @@
 
 </script>
 
+<Drawer position="right" margin="m-4">
+	<MobileNav />
+</Drawer>
 
-<Drawer>(content)</Drawer>
 <AppShell>
 	<div class="-m-2 -mt-2">
 		<AppBar class="" background="bg-transparent">
