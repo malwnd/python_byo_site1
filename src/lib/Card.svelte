@@ -7,15 +7,15 @@
         
         <div>
             <slot name="image">
-                <a href="/events/january24">
+                <!-- <a href="/events/january24">
                     <img src="/january24.webp" class="w-full" alt="" srcset="">
-                </a>
+                </a> -->
             </slot>
         </div>
 
         <div class="mt-4 font-sans text-gray-700 text-xl">
             <slot name="title">
-                <h1><a href="/events/january24">January 2024 Meetup</a></h1>
+                <!-- <h1><a href="/events/january24">January 2024 Meetup</a></h1> -->
             </slot>
         </div>
 
@@ -26,11 +26,9 @@
             </slot>
     </div>
 
-        <div class="text-gray-700 text-base space-x-2 flex">
+        <div class="">
             <slot name="tags">
-                <Chip tag="Open Source" />
-                <Chip tag="Django" />
-                <Chip tag="React" />
+
             </slot>
         </div>
 
