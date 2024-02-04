@@ -23,9 +23,8 @@
 </Drawer>
 
 <AppShell>
-
-	<div class="flex flex-col min-h-screen">
 	
+	<div class="flex flex-col min-h-screen">
 		<div>
 			<AppBar class="" background="bg-transparent">
 				
@@ -50,7 +49,6 @@
 						<!-- <button on:click={drawerOpen}>click me</button> -->
 					</div>
 				</svelte:fragment>	
-
 			</AppBar>
 		</div>
 
