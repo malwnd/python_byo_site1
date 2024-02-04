@@ -3,8 +3,7 @@
 </script>
 
 <main>
-    
-    <div class="w-72 m-6 overflow-hidden rounded-lg shadow-lg transition-transform transfrom hover:scale-105 flex flex-col items-center space-y-2">
+    <div class="w-64 lg:w-72 overflow-hidden rounded-md shadow-lg transition-transform transfrom hover:scale-105 flex flex-col items-center space-y-2">
         
         <div>
             <slot name="image">
@@ -27,7 +26,7 @@
             </slot>
     </div>
 
-        <div class="text-gray-700 text-base space-x-4 flex">
+        <div class="text-gray-700 text-base space-x-2 flex">
             <slot name="tags">
                 <Chip tag="Open Source" />
                 <Chip tag="Django" />

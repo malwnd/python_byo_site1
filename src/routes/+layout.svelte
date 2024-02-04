@@ -54,18 +54,16 @@
 			</AppBar>
 		</div>
 
-
-
-			<!-- Page Route Content -->
-			<div class="flex-1 my-8">
-				<!-- Content is injected here -->
-				<slot />
-			</div>
+		<!-- Page Route Content -->
+		<div class="">
+			<!-- Content is injected here -->
+			<slot />
+		</div>
 		
-			<!-- Footer Content injected Here -->
-			<div class="bottom-0 text-gray-800 mt-auto flex-shrink-0">
-				<Footer />
-			</div>
+		<!-- Footer Content injected Here -->
+		<div class="bottom-0 text-gray-800 mt-auto flex-shrink-0">
+			<Footer />
+		</div>
 
 	</div> 
 </AppShell>
