@@ -25,6 +25,7 @@
         <div class="">
             <slot name="tags"></slot>
         </div>
+        
     </div>
 </main>
 

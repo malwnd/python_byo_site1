@@ -2,7 +2,7 @@
     import Card from "./Card.svelte";
 </script>
 
-<div class="flex flex-row justify-center space-x-16">
+<div class="flex flex-col md:flex-row items-center space-y-10 md:space-y-0">
     <!-- Learning Card Component -->
     <Card>
         <h1 slot="header">Learning</h1>
