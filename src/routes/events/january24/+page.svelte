@@ -1,6 +1,12 @@
 <script>
     import BottomTing from "./BottomTing.svelte";
     import Card from "./Card.svelte";
+
+    // alter card import to this if you want to use the global card component
+    // import Card from "$lib/Card.svelte";
+    // Remove bottom ting for simplicity
+
+    // Optimize to load events from an api
     
 </script>
 

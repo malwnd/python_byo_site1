@@ -8,3 +8,5 @@
       </div>
     </div>
 </div>
+
+<!-- Component is redundant, use the Card component from library and implemnet responsiveness -->

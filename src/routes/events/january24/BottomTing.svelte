@@ -27,3 +27,5 @@
         </p>
     </Card>
 </div>
+
+<!-- Component might be redundant esp with the use of Card Components, can be altered to use card component from lib and implement responsiveness and theming -->
