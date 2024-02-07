@@ -1,12 +1,15 @@
-<div class="border border-black max-w-sm rounded overflow-hidden shadow-lg transition-transform transform hover:scale-105 text-gray-800">
-    <div class="font-bold px-6 py-4">
-      <div class="text-xl"><slot name="header" /></div>
-    </div>
-    <div class="px-6 py-4">
-      <div class="text-gray-700 text-base">
-        <slot name="content"/>
-      </div>
-    </div>
+<div class="w-72 p-4 my-4 rounded-md shadow-lg transition-transform transfrom hover:scale-105 flex flex-col">
+
+  <div class="font-sans text-gray-700 dark:text-gray-300 text-xl">
+      <slot name="title">
+          <!-- <h1><a href="/events/january24">January 2024 Meetup</a></h1> -->
+      </slot>
+  </div>
+
+  <div class="text-gray-700 text-base text-left">
+      <slot name="content"/>
+  </div>
+
 </div>
 
 <!-- Component is redundant, use the Card component from library and implemnet responsiveness -->

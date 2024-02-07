@@ -21,23 +21,21 @@
     
         <div class="text-5xl flex justify-center relative z-20 pointer-events-none">
             <Card>
-                <div slot=header>
-                    <h1 class="text-sm font-sans flex justify-center -m-2"> 📍BYOTECH HUB</h1>
-                    
-                    <h1 class="text-sm font-sans flex justify-center mt-2"> ⌚9AM</h1>
+                <div slot="title">
+                    <h1 class="text-sm font-sans flex justify-center"> 📍BYOTECH HUB</h1> 
+                    <h1 class="text-sm font-sans flex justify-center"> ⌚9AM</h1>
                 </div>
     
-                <div slot="content" class="-mt-4">
-    
-                    <p class="font-sans font-2xl">South Wing 2nd Floor Salamaat Building</p>
-                    <p class="font-sans font-2xl">Between G.Silundika & R.Mugabe</p>
-                    <p class="font-sans font-2xl">9th Avenue, Bulawayo, Zimbabwe</p>
+                <div slot="content" class="">
+                    <p class="font-sans text-base">S.Wing 2nd Floor Salamaat Building</p>
+                    <p class="font-sans text-base">Between G.Silundika & R.Mugabe</p>
+                    <p class="font-sans text-base">9th Ave Bulawayo, Zimbabwe</p>
                 </div>
                
             </Card>
         </div>
     
-        <div class="mt-4 -mb-12 flex flex-col md:flex-row items-center space-y-4">
+        <div class="flex flex-col md:flex-row justify-text">
             <button type="button" class="bg-black font-sans btn text-white">Register to attend</button>
             <button type="button" class="text-black font-sans btn variant-ringed-surface">Useless Button</button>
         </div>
