@@ -13,10 +13,10 @@
 <div id="bigTing">
     <div class="flex flex-col justify-center mx-8 border-2 border-black p-6 rounded-lg z-10">
         <div class="p-4 flex flex-col justify-center items-center space-y-4">
-            <h3 class="font-sans text-gray-800">27 January 2024</h3>
-            <h1 class="sans-serif text-gray-800 text-6xl ">Python</h1>
-            <h1 class="sans-serif text-gray-800 text-6xl ">Bulawayo</h1>
-            <h1 class="sans-serif text-gray-800 text-6xl ">Meetup</h1>
+            <h3 class="font-sans text-gray-800 dark:text-white">27 January 2024</h3>
+            <h1 class="sans-serif text-gray-800 text-6xl dark:text-white">Python</h1>
+            <h1 class="sans-serif text-gray-800 text-6xl dark:text-white">Bulawayo</h1>
+            <h1 class="sans-serif text-gray-800 text-6xl dark:text-white">Meetup</h1>
         </div>
     
         <div class="text-5xl flex justify-center relative z-20 pointer-events-none">
@@ -45,7 +45,7 @@
     
     <div class="flex flex-col m-8 border-2 border-black p-4 rounded-lg">
         <div class="text-5xl m-8 flex justify-center">
-            <h1 class="sans-serif text-gray-800">What it's all about</h1>
+            <h1 class="sans-serif text-gray-800 dark:text-white">What it's all about</h1>
         </div>
         <BottomTing />
     </div>
